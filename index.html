@@ -452,9 +452,15 @@
             jumboNode.style.backgroundColor = "red"
         }
         changeBackgroundColor() */
-        
-        // Write a JavaScript functionality to remove the “twitter” link under the “Elsewhere” section in the aside element. It should happen when the page loads, automatically
 
+        // Write a JavaScript functionality to remove the “twitter” link under the “Elsewhere” section in the aside element. It should happen when the page loads, automatically
+        let twitterNode = document.querySelector('.list-unstyled li:nth-of-type(2)')
+        function removeTwitterButton() {
+
+            
+            twitterNode.parentElement.removeChild(twitterNode);
+        }
+        removeTwitterButton()
         // Write a JavaScript functionality to remove the first 50 characters in the first paragraph for every blog post
         // Write a JavaScript functionality to add a new Blog Post (div with title and text)
         // Write a JavaScript functionality to remove the last Blog Post when the user clicks on the "Older" button
